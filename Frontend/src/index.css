@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+input[type="file"]::file-selector-button {
+  all: revert;
+}
+
 #root {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
