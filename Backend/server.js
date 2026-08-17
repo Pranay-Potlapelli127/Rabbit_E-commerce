@@ -17,16 +17,25 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+// app.use(
+//   cors({
+//     origin: [
+//       "http://localhost:5173",
+//       "https://rabbit-frontend-sooty.vercel.app",
+//     ],
+//     credentials: true,
+//   }),
+// );
 app.use(
   cors({
     origin: [
       "http://localhost:5173",
       "https://rabbit-frontend-sooty.vercel.app",
+      "https://rabbit-frontend-raa77bonp-pranaykumarpotlapelli-3205s-projects.vercel.app",
     ],
     credentials: true,
   }),
 );
-
 connectDB();
 
 const PORT = process.env.PORT || 9000;
