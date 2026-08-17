@@ -7,7 +7,7 @@ import { clearCart } from "../redux/slices/cartSlice";
 const OrderConfirmationPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const {checkout} = useSelector((state) => state.checkout);
+  const { checkout } = useSelector((state) => state.checkout);
 
   // Clear the cart when the order is confirmed
   useEffect(() => {
@@ -15,7 +15,7 @@ const OrderConfirmationPage = () => {
       dispatch(clearCart());
       localStorage.removeItem("cart");
     } else {
-      navigate("/my-order");
+      navigate("/my-orders");
     }
   }, [checkout, dispatch, navigate]);
 

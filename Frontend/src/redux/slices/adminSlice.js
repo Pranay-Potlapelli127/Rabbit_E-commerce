@@ -53,7 +53,7 @@ export const updateUser = createAsyncThunk(
           },
         },
       );
-      return response.data;
+      return response.data.user;
     } catch (error) {
       return rejectWithValue(error.response.data);
     }
@@ -104,8 +104,9 @@ const adminSlice = createSlice({
       })
       .addCase(updateUser.fulfilled, (state, action) => {
         const updatedUser = action.payload;
+        // console.log(action.payload);
         const userIndex = state.users.findIndex(
-          (user) => user._id === updateUser._id,
+          (user) => user._id === updatedUser._id,
         );
         if (userIndex !== -1) {
           state.users[userIndex] = updatedUser;

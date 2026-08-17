@@ -1,20 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import {
+  fetchAllOrders,
+  updateOrderStatus,
+} from "../../redux/slices/adminOrderSlice";
 
 const OrderManagement = () => {
-  const orders = [
-    {
-      _id: 123123321,
-      user: {
-        name: "ruby monroe",
-      },
-      totalPrice: 110,
-      status: "Processing",
-    },
-  ];
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const { user } = useSelector((state) => state.auth);
+  const { orders, loading, error } = useSelector((state) => state.adminOrders);
+
+  useEffect(() => {
+    if (!user || user.role !== "admin") {
+      navigate("/");
+    } else {
+      dispatch(fetchAllOrders());
+    }
+  }, [dispatch, user, navigate]);
 
   const handleStatusChange = (orderId, status) => {
-    log(`Order ID: ${orderId}, New Status: ${status}`);
+    dispatch(updateOrderStatus({ id: orderId, status }));
   };
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error:{error}</p>;
 
   return (
     <div className="max-w-7xl mx-auto p-6">
@@ -53,7 +65,7 @@ const OrderManagement = () => {
           </span>
         </td> */}
                   <td className="p-4">{order.user.name}</td>
-                  <td className="p-4">{order.totalPrice}</td>
+                  <td className="p-4">{order.totalPrice.toFixed(2)}</td>
                   <td className="p-4">
                     <select
                       value={order.status}
@@ -63,7 +75,7 @@ const OrderManagement = () => {
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     >
                       <option value="Processing">Processing</option>
-                      <option value="Shipped">Shipped</option>
+                      <option value="Shipping">Shipped</option>
                       <option value="Delivered">Delivered</option>
                       <option value="Cancelled">Cancelled</option>
                     </select>
