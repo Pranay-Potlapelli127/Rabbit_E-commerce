@@ -6,7 +6,7 @@ const FeaturedCollection = () => {
     <section className="py-16 px-4 lg:px-0">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center bg-green-50 rounded-3xl">
         {/* Left Content */}
-        <div className="w-1/2 p-8 text-center lg:text-left">
+        <div className="w-1/2 p-8 text-center sm:p-8 lg:text-left">
           <h2 className="text-lg font-semibold text-gray-700 mb-2">
             Comfort and Style
           </h2>

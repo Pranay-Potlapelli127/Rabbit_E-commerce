@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { fetchAdminProducts } from "../redux/slices/adminProductSlice";
 import { fetchAllOrders } from "../redux/slices/adminOrderSlice";
 
 const AdminHomePage = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const {
     products,
     loading: productsLoading,
@@ -76,11 +77,12 @@ const AdminHomePage = () => {
                 orders.map((order) => (
                   <tr
                     key={order._id}
+                    onClick={() => navigate(`/order/${order._id}`)}
                     className="border-b hover:bg-gray-50 cursor-pointer"
                   >
                     <td className="p-4">{order._id}</td>
                     <td className="p-4">{order.user.name}</td>
-                    <td className="p-4">{order.totalPrice.toFixed(2)}</td>
+                    <td className="p-4">${order.totalPrice.toFixed(2)}</td>
                     <td className="p-4">{order.status}</td>
                   </tr>
                 ))
