@@ -35,6 +35,12 @@ const orderSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
+    checkout: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Checkout",
+      unique: true,
+      sparse: true,
+    },
     orderItems: [orderItemSchema],
     shippingAddress: {
       address: { type: String, required: true },
@@ -67,6 +73,9 @@ const orderSchema = new mongoose.Schema(
     paymentStatus: {
       type: String,
       default: "pending",
+    },
+    paymentDetails: {
+      type: mongoose.Schema.Types.Mixed,
     },
     status: {
       type: String,

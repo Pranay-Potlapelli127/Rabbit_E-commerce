@@ -18,11 +18,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=39",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048255/rabbit/products/mens-topwear/oxford-shirt-01.jpg",
         altText: "Classic Oxford Button-Down Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=40",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048095/rabbit/products/mens-topwear/oxford-shirt-02.jpg",
         altText: "Classic Oxford Button-Down Shirt Back View",
       },
     ],
@@ -46,11 +46,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=41",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048101/rabbit/products/mens-topwear/slim-fit-stretch-shirt-01.jpg",
         altText: "Slim-Fit Stretch Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=42",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048102/rabbit/products/mens-topwear/slim-fit-stretch-shirt-02.jpg",
         altText: "Slim-Fit Stretch Shirt Back View",
       },
     ],
@@ -74,11 +74,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=43",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048091/rabbit/products/mens-topwear/casual-denim-shirt-01.jpg",
         altText: "Casual Denim Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=44",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048092/rabbit/products/mens-topwear/casual-denim-shirt-02.jpg",
         altText: "Casual Denim Shirt Back View",
       },
     ],
@@ -102,11 +102,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=45",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048098/rabbit/products/mens-topwear/printed-resort-shirt-01.jpg",
         altText: "Printed Resort Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=1",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048098/rabbit/products/mens-topwear/printed-resort-shirt-02.jpg",
         altText: "Printed Resort Shirt Back View",
       },
     ],
@@ -130,11 +130,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=47",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048100/rabbit/products/mens-topwear/slim-fit-easy-iron-shirt-01.jpg",
         altText: "Slim-Fit Easy-Iron Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=2",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048100/rabbit/products/mens-topwear/slim-fit-easy-iron-shirt-02.jpg",
         altText: "Slim-Fit Easy-Iron Shirt Front View",
       },
     ],
@@ -158,11 +158,11 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=3",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048096/rabbit/products/mens-topwear/polo-tshirt-ribbed-collar-01.jpg",
         altText: "Polo T-Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=4",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048097/rabbit/products/mens-topwear/polo-tshirt-ribbed-collar-02.jpg",
         altText: "Polo T-Shirt Back View",
       },
     ],
@@ -186,7 +186,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=5",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048093/rabbit/products/mens-topwear/oversized-graphic-tshirt-01.jpg",
         altText: "Oversized Graphic T-Shirt Front View",
       },
     ],
@@ -210,7 +210,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=6",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048099/rabbit/products/mens-topwear/regular-fit-henley-shirt-01.jpg",
         altText: "Regular-Fit Henley Shirt Front View",
       },
     ],
@@ -234,7 +234,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=7",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048093/rabbit/products/mens-topwear/long-sleeve-thermal-tee-01.jpg",
         altText: "Long-Sleeve Thermal Tee Front View",
       },
     ],
@@ -258,13 +258,14 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=8",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048103/rabbit/products/mens-topwear/v-neck-classic-tshirt-01.jpg",
         altText: "V-Neck Classic T-Shirt Front View",
       },
     ],
     rating: 4.7,
     numReviews: 28,
   },
+  // Bottom Wear
   {
     name: "Slim Fit Joggers",
     description:
@@ -282,7 +283,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=9",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048109/rabbit/products/mens-bottomwear/slim-fit-joggers-01.jpg",
         altText: "Slim Fit Joggers Front View",
       },
     ],
@@ -306,7 +307,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=10",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048104/rabbit/products/mens-bottomwear/cargo-joggers-01.jpg",
         altText: "Cargo Joggers Front View",
       },
     ],
@@ -330,7 +331,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=11",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048111/rabbit/products/mens-bottomwear/tapered-sweatpants-01.jpg",
         altText: "Tapered Sweatpants Front View",
       },
     ],
@@ -354,7 +355,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=12",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048106/rabbit/products/mens-bottomwear/denim-jeans-01.jpg",
         altText: "Denim Jeans Front View",
       },
     ],
@@ -378,7 +379,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=13",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048106/rabbit/products/mens-bottomwear/chino-pants-01.jpg",
         altText: "Chino Pants Front View",
       },
     ],
@@ -402,7 +403,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=14",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048275/rabbit/products/mens-bottomwear/track-pants-01.jpg",
         altText: "Track Pants Front View",
       },
     ],
@@ -426,7 +427,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=15",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048110/rabbit/products/mens-bottomwear/slim-fit-trousers-01.jpg",
         altText: "Slim Fit Trousers Front View",
       },
     ],
@@ -450,7 +451,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=16",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048105/rabbit/products/mens-bottomwear/cargo-pants-01.jpg",
         altText: "Cargo Pants Front View",
       },
     ],
@@ -474,7 +475,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=17",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048108/rabbit/products/mens-bottomwear/relaxed-fit-sweatpants-01.jpg",
         altText: "Relaxed Fit Sweatpants Front View",
       },
     ],
@@ -498,13 +499,15 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=18",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048107/rabbit/products/mens-bottomwear/formal-dress-pants-01.jpg",
         altText: "Formal Dress Pants Front View",
       },
     ],
     rating: 4.9,
     numReviews: 8,
   },
+  // W-Bottom Wear
+
   {
     name: "High-Waist Skinny Jeans",
     description:
@@ -522,7 +525,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=19",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048115/rabbit/products/womens-bottomwear/high-waist-skinny-jeans-01.jpg",
         altText: "High-Waist Skinny Jeans",
       },
     ],
@@ -546,7 +549,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=20",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048118/rabbit/products/womens-bottomwear/wide-leg-trousers-01.jpg",
         altText: "Wide-Leg Trousers Front View",
       },
     ],
@@ -570,7 +573,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=21",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048118/rabbit/products/womens-bottomwear/stretch-leggings-01.jpg",
         altText: "Stretch Leggings Front View",
       },
     ],
@@ -594,7 +597,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=22",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048116/rabbit/products/womens-bottomwear/pleated-midi-skirt-01.jpg",
         altText: "Pleated Midi Skirt Front View",
       },
     ],
@@ -618,7 +621,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=23",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048113/rabbit/products/womens-bottomwear/flared-palazzo-pants-01.jpg",
         altText: "Flared Palazzo Pants Front View",
       },
     ],
@@ -642,7 +645,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=24",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048114/rabbit/products/womens-bottomwear/high-rise-joggers-01.jpg",
         altText: "High-Rise Joggers Front View",
       },
     ],
@@ -666,7 +669,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=25",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048115/rabbit/products/womens-bottomwear/paperbag-waist-shorts-01.jpg",
         altText: "Paperbag Waist Shorts Front View",
       },
     ],
@@ -690,7 +693,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=26",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048117/rabbit/products/womens-bottomwear/stretch-denim-shorts-01.jpg",
         altText: "Stretch Denim Shorts Front View",
       },
     ],
@@ -714,7 +717,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=27",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048112/rabbit/products/womens-bottomwear/culottes-01.jpg",
         altText: "Culottes Front View",
       },
     ],
@@ -738,13 +741,14 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=28",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048112/rabbit/products/womens-bottomwear/classic-pleated-trousers-01.jpg",
         altText: "Classic Pleated Trousers Front View",
       },
     ],
     rating: 4.8,
     numReviews: 20,
   },
+  //  W-Top Wear
   {
     name: "Knitted Cropped Top",
     description:
@@ -762,7 +766,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=29",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048122/rabbit/products/womens-topwear/knitted-cropped-top-01.jpg",
         altText: "Knitted Cropped Top",
       },
     ],
@@ -786,7 +790,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=30",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048119/rabbit/products/womens-topwear/boho-floral-blouse-01.jpg",
         altText: "Boho Floral Blouse",
       },
     ],
@@ -810,7 +814,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=31",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048120/rabbit/products/womens-topwear/casual-tshirt-01.jpg",
         altText: "Casual T-Shirt",
       },
     ],
@@ -834,7 +838,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=32",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048123/rabbit/products/womens-topwear/off-shoulder-top-01.jpg",
         altText: "Off-Shoulder Top",
       },
     ],
@@ -858,7 +862,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=33",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048123/rabbit/products/womens-topwear/lace-trimmed-cami-top-01.jpg",
         altText: "Lace-Trimmed Cami Top",
       },
     ],
@@ -882,7 +886,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=34",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048121/rabbit/products/womens-topwear/graphic-print-tee-01.jpg",
         altText: "Graphic Print Tee",
       },
     ],
@@ -906,7 +910,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=35",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048124/rabbit/products/womens-topwear/ribbed-long-sleeve-top-01.jpg",
         altText: "Ribbed Long-Sleeve Top",
       },
     ],
@@ -930,7 +934,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=36",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048125/rabbit/products/womens-topwear/ruffle-sleeve-blouse-01.jpg",
         altText: "Ruffle-Sleeve Blouse",
       },
     ],
@@ -954,7 +958,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=37",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048121/rabbit/products/womens-topwear/classic-button-up-shirt-01.jpg",
         altText: "Classic Button-Up Shirt",
       },
     ],
@@ -978,7 +982,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=38",
+        url: "https://res.cloudinary.com/ejgjaycy/image/upload/v1787048126/rabbit/products/womens-topwear/v-neck-wrap-top-01.jpg",
         altText: "V-Neck Wrap Top",
       },
     ],

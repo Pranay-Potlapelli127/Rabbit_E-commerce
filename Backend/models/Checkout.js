@@ -65,12 +65,21 @@ const checkoutSchema = new mongoose.Schema(
     paymentDetails: {
       type: mongoose.Schema.Types.Mixed, // store payment-related details(transaction ID, paypal response)
     },
+    paypalOrderId: {
+      type: String,
+      unique: true,
+      sparse: true,
+    },
     isFinalized: {
       type: Boolean,
       default: false,
     },
     finalizedAt: {
       type: Date,
+    },
+    order: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "order",
     },
   },
   { timestamps: true },

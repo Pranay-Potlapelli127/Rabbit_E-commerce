@@ -81,8 +81,8 @@ const AdminHomePage = () => {
                     className="border-b hover:bg-gray-50 cursor-pointer"
                   >
                     <td className="p-4">{order._id}</td>
-                    <td className="p-4">{order.user.name}</td>
-                    <td className="p-4">${order.totalPrice.toFixed(2)}</td>
+                    <td className="p-4">{order.user?.name || "Unknown User"}</td>
+                    <td className="p-4">${(order.totalPrice ?? 0).toFixed(2)}</td>
                     <td className="p-4">{order.status}</td>
                   </tr>
                 ))

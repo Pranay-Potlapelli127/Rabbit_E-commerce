@@ -24,11 +24,25 @@ const ProductDetails = ({ productId }) => {
 
   const productFetchId = productId || id;
 
+  // useEffect(() => {
+  //   if (productFetchId) {
+  //     dispatch(fetchProductDetails(productFetchId));
+  //     dispatch(fetchSimilarProducts({ id: productFetchId }));
+  //   }
+  // }, [dispatch, productFetchId]);
+
   useEffect(() => {
-    if (productFetchId) {
-      dispatch(fetchProductDetails(productFetchId));
-      dispatch(fetchSimilarProducts({ id: productFetchId }));
-    }
+    if (!productFetchId) return;
+
+    // Reset product-specific selections
+    setSelectedSize("");
+    setSelectedColor("");
+    setQuantity(1);
+    setIsButtonDisabled(false);
+    setMainImage("");
+
+    dispatch(fetchProductDetails(productFetchId));
+    dispatch(fetchSimilarProducts({ id: productFetchId }));
   }, [dispatch, productFetchId]);
 
   useEffect(() => {

@@ -3,6 +3,7 @@ const Product = require("./models/Product");
 const products = require("./data/products");
 const User = require("./models/User");
 const Cart = require("./models/Cart");
+const Order = require("./models/Order");
 
 const dotenv = require("dotenv");
 const dns = require("dns");
@@ -19,6 +20,7 @@ const seedData = async () => {
     await Product.deleteMany();
     await User.deleteMany();
     await Cart.deleteMany();
+    await Order.deleteMany();
     // Create a default admin User
 
     const createdUser = await User.create({

@@ -25,10 +25,11 @@ router.get("/my-orders", protect, async (req, res) => {
 // @access Private
 router.get("/:id", protect, async (req, res) => {
   try {
-    const order = await Order.findById(req.params.id).populate(
-      "user",
-      "name email",
-    );
+    const query = { _id: req.params.id };
+    if (req.user.role !== "admin") {
+      query.user = req.user._id;
+    }
+    const order = await Order.findOne(query).populate("user", "name email");
 
     if (!order) {
       return res.status(404).json({ message: "Order not found" });

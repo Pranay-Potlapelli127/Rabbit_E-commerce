@@ -13,6 +13,7 @@ const Checkout = () => {
   const { user } = useSelector((state) => state.auth);
 
   const [checkoutId, setCheckoutId] = useState(null);
+  const [checkoutTotal, setCheckoutTotal] = useState(null);
   const [shippingAddress, setShippingAddress] = useState({
     firstName: "",
     lastName: "",
@@ -30,8 +31,37 @@ const Checkout = () => {
     }
   }, [cart, navigate]);
 
+  // const handleCreateCheckout = async (e) => {
+  //   e.preventDefault();
+  //   if (cart && cart.products.length > 0) {
+  //     const res = await dispatch(
+  //       createCheckout({
+  //         checkoutItems: cart.products,
+  //         shippingAddress,
+  //         paymentMethod: "Paypal",
+  //         totalPrice: cart.totalPrice,
+  //       }),
+  //     );
+  //     if (res.payload && res.payload._id) {
+  //       setCheckoutId(res.payload._id); // Set checkout ID if checkout was successful
+  //     }
+  //   }
+  // };
+
   const handleCreateCheckout = async (e) => {
     e.preventDefault();
+
+    const token = localStorage.getItem("userToken");
+
+    if (!token || !user) {
+      navigate("/login", {
+        state: {
+          from: "/checkout",
+        },
+      });
+      return;
+    }
+
     if (cart && cart.products.length > 0) {
       const res = await dispatch(
         createCheckout({
@@ -41,12 +71,13 @@ const Checkout = () => {
           totalPrice: cart.totalPrice,
         }),
       );
-      if (res.payload && res.payload._id) {
-        setCheckoutId(res.payload._id); // Set checkout ID if checkout was successful
+
+      if (createCheckout.fulfilled.match(res)) {
+        setCheckoutId(res.payload._id);
+        setCheckoutTotal(res.payload.totalPrice);
       }
     }
   };
-
   const handlePaymentSuccess = async (details) => {
     try {
       const response = await axios.put(
@@ -232,7 +263,7 @@ const Checkout = () => {
               <div>
                 <h3 className="text-lg mb-4">Pay with Paypal</h3>
                 <PayPalButton
-                  amount={cart.totalPrice}
+                  amount={checkoutTotal}
                   onSuccess={handlePaymentSuccess}
                   onError={(err) => alert("Payment failed. Try again.")}
                 />
